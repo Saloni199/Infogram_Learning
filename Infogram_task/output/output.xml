@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221215 14:34:31.555" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="D:\Robocorp\Infogram_task\tasks.robot">
+<test id="s1-t1" name="Extraction of Learning and send email with excel file." line="23">
+<kw name="Send Email with attachments">
+<kw name="RPA.Outlook.Application.Open Application">
+<msg timestamp="20221215 14:34:36.968" level="FAIL">No keyword with name 'RPA.Outlook.Application.Open Application' found.</msg>
+<status status="FAIL" starttime="20221215 14:34:36.968" endtime="20221215 14:34:36.968"/>
+</kw>
+<kw name="Send Message">
+<arg>recipients=${recipients}</arg>
+<arg>subject=Hello</arg>
+<arg>body=Please see the attached file for Infogram.</arg>
+<arg>attachments=${Workbook}</arg>
+<status status="NOT RUN" starttime="20221215 14:34:36.976" endtime="20221215 14:34:36.976"/>
+</kw>
+<kw name="RPA.Outlook.Application.Quit Application">
+<status status="NOT RUN" starttime="20221215 14:34:36.985" endtime="20221215 14:34:36.985"/>
+</kw>
+<status status="FAIL" starttime="20221215 14:34:36.960" endtime="20221215 14:34:36.985"/>
+</kw>
+<status status="FAIL" starttime="20221215 14:34:36.960" endtime="20221215 14:34:36.985">No keyword with name 'RPA.Outlook.Application.Open Application' found.</status>
+</test>
+<doc>Extraction of Learning and send email with excel file.</doc>
+<status status="FAIL" starttime="20221215 14:34:31.555" endtime="20221215 14:34:36.990"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221215 14:34:36.949" level="ERROR">Error in file 'D:\Robocorp\Infogram_task\tasks.robot' on line 7: Importing library 'RPA.Outlook.Application' failed: ImportError: No system module 'pywintypes' (pywintypes39.dll)
+Traceback (most recent call last):
+  File "c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages\RPA\Outlook\Application.py", line 14, in &lt;module&gt;
+    import pywintypes
+  File "c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages\win32\lib\pywintypes.py", line 129, in &lt;module&gt;
+    __import_pywin32_system_module__("pywintypes", globals())
+  File "c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages\win32\lib\pywintypes.py", line 110, in __import_pywin32_system_module__
+    raise ImportError("No system module '%s' (%s)" % (modname, filename))
+PYTHONPATH:
+  d:\Robocorp\Infogram_task
+  c:\Users\saloni.soni\.vscode\extensions\robocorp.robotframework-lsp-1.7.0\src\robotframework_debug_adapter
+  d:\Robocorp\Infogram_task
+  c:\Users\saloni.soni\.vscode\extensions\robocorp.robotframework-lsp-1.7.0\src
+  c:\Users\saloni.soni\.vscode\extensions\robocorp.robotframework-lsp-1.7.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\python39.zip
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\DLLs
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\fe28192_b1f3c24_1c0bc041\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20221215 14:33:13.555" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks Copy" source="d:\Robocorp\Infogram_task\tasks copy.robot">
+<test id="s1-t1" name="Send Email with attachment" line="13">
+<kw name="Open Application" library="RPA.Outlook.Application">
+<doc>Open the Outlook application.</doc>
+<status status="PASS" starttime="20221215 14:33:15.284" endtime="20221215 14:33:15.950"/>
+</kw>
+<kw name="Send Email" library="RPA.Outlook.Application">
+<arg>recipients=${recipients}</arg>
+<arg>subject=Hello</arg>
+<arg>body=Please see the attached file for Infogram.</arg>
+<arg>attachments=${Workbook}</arg>
+<doc>Send email with Outlook</doc>
+<status status="PASS" starttime="20221215 14:33:15.950" endtime="20221215 14:33:16.502"/>
+</kw>
+<kw name="Quit Application" library="RPA.Outlook.Application">
+<doc>Quit the application.</doc>
+<status status="PASS" starttime="20221215 14:33:16.502" endtime="20221215 14:33:16.556"/>
+</kw>
+<status status="PASS" starttime="20221215 14:33:15.284" endtime="20221215 14:33:16.561"/>
+</test>
+<status status="PASS" starttime="20221215 14:33:13.571" endtime="20221215 14:33:16.574"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks Copy">Tasks Copy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
